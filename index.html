@@ -72,10 +72,8 @@
                 </div>
             </div>
         </div>
-    </div>
         
     <!-- Featured Campsites -->
-    <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
@@ -88,13 +86,11 @@
                     </div>
                     <img class="d-flex ml-3 img-thumbnail"src="img/react-lake-thumb.jpg" alt="React Lake thumbnail">
                 </div>
-                
             </div>     
         </div>     
-    </div>
+
 
     <!-- Our Community Partners -->
-    <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
@@ -108,6 +104,43 @@
                     </div>
                 </div>
                 
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card bg-info text-white">
+                    <h3>Reserve a Campsite</h3>
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                            <div class="col">
+                                <select class="form-control" name="numCampers" id="numCampers">
+                                    <option value="">Select...</option>
+                                    <option value="1">1-10</option>
+                                    <option value="2">11-20</option>
+                                    <option value="3">21-50</option>
+                                    <option value="4">51-100</option>
+                                    <option value="5">100-200</option>
+                                    <option value="6">200+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="date">Date</label>
+                            <div class="col">
+                                <input class="form-control" type="date" id="date" name="date" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
