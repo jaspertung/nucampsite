@@ -1,39 +1,33 @@
-/* html, body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-} */
 body {
-    font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
-}
+  font-family: "Source Sans Pro", "Open Sans", sans-serif; }
+
 h1, h2, h3 {
-    font-family: 'Sansita Swashed', cursive;
-}
+  font-family: "Sansita Swashed", cursive; }
+
 h2 {
-    color: #3046c5;
-}
+  color: #3046c5; }
+
 header h2 {
-    color: #cec8ff;
-}
+  color: #cec8ff; }
+
 .site-footer {
-    background-image: linear-gradient(#cec8ff, white);
-    padding: 20px 0;
-}
+  background-image: linear-gradient(#cec8ff, #cec8ff);
+  padding: 20px 0; }
+
 .jumbotron {
-    padding: 30px;
-    background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
-    color: white;
-    margin: 0;
-}
+  padding: 30px;
+  background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
+  color: #cec8ff;
+  margin: 0; }
+
 .row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
-}
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
 .navbar {
-    background-color: #901CAD;
-}
+  background-color: #901CAD; }
+
 /* was used for about us community partner tabs */
 /* .tab-content {
     border: 1px solid #DDD;
@@ -41,23 +35,21 @@ header h2 {
     padding: 10px;
 } */
 .accordion-anchor {
-    text-decoration: none;
-    color: #212529;
-}
+  text-decoration: none;
+  color: #212529; }
+
 .accordion-anchor:hover {
-    text-decoration: none;
-    color: #212529;
-}
+  text-decoration: none;
+  color: #212529; }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+  background-color: rgba(0, 0, 0, 0.5); }
+
 .carousel {
-    border: solid #5637dd;
-}
+  border: solid #5637dd; }
+
 #carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-}
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }
