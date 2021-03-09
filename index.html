@@ -199,14 +199,9 @@
                     <span class="carousel-control-next-icon"></span>
                     <span class="sr-only">Next</span>
                 </a>
-                <div class="btn-group" id="carouselButton">
-                    <button class="btn btn-danger btn-sm" id="carouselPause">
-                        <i class="fa fa-pause"></i>
-                    </button>
-                    <button class="btn btn-danger btn-sm" id="carouselPlay">
-                        <i class="fa fa-play"></i>
-                    </button>
-                </div>
+                <button class="btn btn-danger btn-sm" id="carouselButton">
+                    <i class="fa fa-pause"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -310,9 +305,9 @@
         })
     </script> -->
 
-    <!-- jquery for carousel buttons -->
-    <script>
-        $(function () {
+    <!-- jquery for carousel play/pause buttons -->
+    <!-- <script>
+        $(function() {
             $(".carousel").carousel( { interval: 2000 } );
             // sets cycle interval to 2000 ms
             $("#carouselPause").click(function(){
@@ -322,6 +317,30 @@
             });
             $("#carouselPlay").click(function(){
                 $(".carousel").carousel("cycle");
+            });
+        });
+    </script> -->
+   
+    <!-- updated jquery for one carousel button -->
+    <script>
+        $(function() {
+            $(".carousel").carousel( { interval: 2000 } );
+            $("#carouselButton").click(function(){
+                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                // checks if child of i element has class of fa-pause
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    // removes font awesome pause icon
+                    $("#carouselButton").children("i").addClass("fa-play");
+                    // adds font awesome play icon
+                } else {
+                    $(".carousel").carousel("cycle");
+                    // if button that doesn't have class of fa-pause is clicked, the carousel will start cycling again
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    // remove font awesome play icon
+                    $("#carouselButton").children("i").addClass("fa-pause");
+                    // add font awesome pause icon
+                }
             });
         });
     </script>
