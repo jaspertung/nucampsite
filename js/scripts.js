@@ -42,3 +42,16 @@ $(function() {
         }
     });
 });
+
+// jquery to open reserve modal
+$(function() {
+    $("#reserveButton").click(function(){
+        $("#reserveModal").modal("show");
+    });
+});
+// jquery to open login modal
+$(function() {
+    $("#loginButton").click(function (){
+        $("#loginModal").modal("show");
+    });
+});

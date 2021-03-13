@@ -1,9 +1,11 @@
 $main-text-color: #212529;
+$secondary-text-color: white;
 $color-primary: #3046c5;
 $color-secondary: #5637dd;
 $color-light: #cec8ff;
 $color-mid: #901CAD;
 $color-dark: #60106b;
+$color-teal: #17a2b8;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $body-font: 'Source Sans Pro', 'Open Sans', sans-serif;
@@ -67,4 +69,16 @@ header{
     right: 0;
     bottom: 0;
     z-index: 100;
+}
+#reserveModal {
+    .modal-header {
+        background-color: $color-teal;
+        color: $secondary-text-color;
+    }
+}
+#loginModal {
+    .modal-header {
+        background-color: $color-mid;
+        color: $secondary-text-color;
+    }
 }
